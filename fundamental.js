@@ -114,3 +114,58 @@ let students = {
 console.log("Name is "+students["Wilson"]["fullNames"]+" and age is "+students["Wilson"]["age"]);
 // Or display in this way
 console.log(`Name is ${students['Wilson']['fullNames']} and age is ${students['Wilson']['age']}`);
+
+
+
+// Operators
+
+// arithmetic operators:+,-,*,/,%
+console.log(4%3);   //Outputs 1
+
+// Comparison Operators: ==, !=, ===, !==
+// == is opposite of != and === is opposite of !==
+
+let one = 1;
+let One = "1";
+if(one == One){     // the == operator checks if variables have the same value
+    console.log(`${one} and ${One} are the same`);   
+}else{
+    console.log(`${one} and ${One} are not the same`);   
+}
+
+if(one === One){        // the == operator checks if variables have the same value and are of the same datatype
+    console.log(`${one} and ${One} are the same`);
+}else{
+    console.log(`${one} and ${One} are not the same coz are not of the same type`);
+}
+
+// Logical Operators: && || !
+
+let isMale = true;
+let isOld = false;
+
+if(isMale && isOld){
+    console.log("Male and old");
+}else{
+    console.log("Not male and not old");
+}
+
+if(isMale || isOld){
+    console.log("Male or old");
+}else{
+    console.log("Not male or not old");
+}
+
+if(!isMale){
+    console.log("Is Female");
+}else{
+    console.log("Is Male");
+}
+
+// Assignment operators: +=, -=, *=, /=, %=
+
+let agn = 6;
+console.log(agn/=3); //outputs 2
+
+
+
