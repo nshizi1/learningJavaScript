@@ -168,4 +168,77 @@ let agn = 6;
 console.log(agn/=3); //outputs 2
 
 
+// Some sort exercises
+console.log(5+3);
+console.log(10-4);
+console.log(15/3);
+console.log(20%6);
 
+if(5 == 5){
+    console.log("Are equal");
+}else{
+    console.log("Are not equal");
+}
+if("Apple" == "banana"){
+    console.log("Are the same");
+}else{
+    console.log("Are not the same");
+}
+if(10 != 15){
+    console.log("Are not equal");
+}else{
+    console.log("Are equal");
+}
+
+if(7 === "7"){
+    console.log("Are exactly equal");
+}else{
+    console.log("Are not exactly equal");
+}
+
+isSunny = true;
+forgotUmbrella = true;
+if(isSunny && forgotUmbrella){
+    console.log("You wont get wet");
+}else{
+    console.log("You will get wet");
+}
+
+haveMovieTicket = true;
+haveConcertTicket = true;
+
+if(haveMovieTicket || haveConcertTicket){
+    console.log("Will go out");
+}else{
+    console.log("Will not go out");
+}
+
+isRaining = true;
+if(!isRaining){
+    console.log("Will not carry umbrella");
+}else{
+    console.log("Will carry umbrella");
+}
+
+aSleep = true;
+aWake = true;
+if(aSleep && aWake){
+    console.log("Cant be asleep and awake at the same time");
+}else{
+    console.log("Cant be asleep or awake")
+}
+
+isHappy = true;
+isSad = false;
+if(isHappy || isSad){
+    console.log("Is happy or sad");
+}else{
+    console.log("Not happy or sad")
+}
+
+candies = 10;
+candies += 3;
+candies -= 2;
+candies *= 5;
+candies /=2;
+console.log(candies);
