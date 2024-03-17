@@ -1,3 +1,4 @@
+// camel case
 var number;
 number = 4;
 console.log(number);
@@ -63,3 +64,53 @@ console.log(person["name"]);
 
 
 console.log(person.name + " is " + person.age + " years old and works as a "+ person.occupation);
+
+
+// functions
+
+function sayHello(name){    // function with name as a parameter
+    console.log("Hello " + name);
+}
+sayHello("Nshiziboi");
+
+
+// variables and datatypes
+var x = 5;
+let y = "Hello";
+const PI = 3.14159;
+console.log(x, y, PI);
+// console.log(z)   // This will generate an error message
+
+function scopeExample(){
+    let f = 10;
+    console.log(f);
+}
+scopeExample();
+
+let myName = "Wilson Nshizirungu";
+let myAge = 18;
+let isStudent = true;
+let favoriteFoods = ["Rice", "Meat", "Chips", "Noodles"];
+let student = {
+    "name": "John Doe",
+    "age": 15,
+    "isStudent": true
+}
+console.log(myName, myAge, isStudent, favoriteFoods);
+console.log(student["name"], student["age"], student["isStudent"]);
+
+let students = {
+    "Wilson": {
+        "fullNames": "Wilson Nshizirungu",
+        "age": 18,
+        "trade": "Software Development"
+    },
+    "Doe": {
+        "fullNames": "John Doe",
+        "age": 15,
+        "trade": "Computer Science"
+    }
+}
+console.log("Name is "+students["Wilson"]["fullNames"]+" and age is "+students["Wilson"]["age"]);
+// Or display in this way
+console.log(`Name is ${students['Wilson']['fullNames']} and age is ${students['Wilson']['age']}`);
