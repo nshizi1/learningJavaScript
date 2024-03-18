@@ -242,3 +242,97 @@ candies -= 2;
 candies *= 5;
 candies /=2;
 console.log(candies);
+
+
+
+
+// Control flow: if,if-else, if-else-if-else, nested-if, switch case
+
+// if and if-else
+let age = 18;
+if(age >= 18){
+    console.log("You are old enough to vote");
+}else{
+    console.log("You are not old enough to vote");
+}
+
+// if-else-if-else
+// number in range of 20
+let nbr = 16;
+if(nbr <= 0){
+    console.log("Number is below the range of 20");
+}else if(nbr <= 20){
+    console.log("Number is in range of 20");
+}else{
+    console.log("Number is above the range of 20");
+}
+
+// nested if
+let someOne = {
+    gender: 'female',
+    age: 18
+};
+
+if (someOne.gender === 'female'){
+    if (someOne.age >= 18){
+        console.log("You are a female and allowed to weave hair");
+    }else{
+        console.log("You are a female but not allowed to weave hair");
+    }
+}else{
+    console.log("Cant weave hair if you are not a female");
+}
+
+// switch case
+
+let cars = {
+    "Sedan" : ["Toyota Camry", "Honda Accord", "Ford Fusion", "BMW 3 series", "Mercedes-Benz E-Class"],
+    "SUV" : ["Toyota RAV4", "Honda CR-V", "Ford Explorer", "Jeep Grand Cherokee", "Subaru Outback"],
+    "Hatchback" : ["Volkswagen Golf", "Ford Focus", "Mazda Mazda3", "Hyundai Elantra GT", "Honda Civic Hatchback"],
+    "Coupe" : ["Audi A5", "BMW 4 series", "Mercedes-Benz C-Class Coupe", "Ford Mustang", "Chevrolet Camaro"],
+    "Convertible" : ["Mazda MX-5 Miata", "BMW 2 Series Convertible", "Audi A3 Cabriolet", "Mercedes-Benz C-Class Cabriolet", "Ford Mustang Convertible"],
+    "Station Wagon" : ["Subaru Outback", "Volvo V60", "Audi A4 Allroad", "Volkswagen Golf SportWagen", "Mercedes-Benz E-Class Wagon"],
+    "Minivan" : ["Chrysler Pacifica", "Honda Odyssey", "Toyota Sienna", "Kia Carnival (Sedona)", "Dodge Grand Caravan"],
+    "Pickup Truck" : ["Ford F-150", "Chevrolet Silverado 1500", "Ram 1500", "Toyota Tacoma", "GMC Sierra 1500"],
+
+}
+
+console.log(cars["Sedan"][2]);      //outputs: Ford Fusion
+
+
+// switch statements
+
+let switchValue = 5;
+switch(switchValue){
+    case 1:
+        console.log("Monday");
+    break;
+    case 2:
+        console.log("Tuesday");
+    break;
+    case 3:
+        console.log("Wednesday");
+    break;
+    case 4:
+        console.log("Thursday");
+    break;
+    case 5:
+        console.log("Friday");
+    break;
+    case 6:
+        console.log("Saturday");
+    break;
+    case 7:
+        console.log("Sunday");
+    break;
+    default:
+        console.log("No day found");
+        
+}
+
+// Loops: for, while, do-while
+
+let loopNbr = 1;
+for(loopNbr; loopNbr <= 7; loopNbr++){
+    console.log(loopNbr);
+}
