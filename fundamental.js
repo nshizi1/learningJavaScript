@@ -334,5 +334,98 @@ switch(switchValue){
 
 let loopNbr = 1;
 for(loopNbr; loopNbr <= 7; loopNbr++){
-    console.log(loopNbr);
+    loopNbr += loopNbr;
 }
+console.log(loopNbr);
+while(loopNbr >= 0){
+    console.log(loopNbr);
+    loopNbr--;
+}
+
+do{
+    console.log(loopNbr);
+    loopNbr--;
+}while(loopNbr >= 0)
+
+
+
+// Functions
+
+function Hello() {      // function without parameters
+    console.log("Hello World!");
+}
+Hello();
+
+function Hello(name) {  // function with one parameter
+    console.log(`Hello ${name}!`);
+}
+Hello('John');
+
+function Hello(name, age, location) {  // function with multiple parameters
+    console.log(`Hello ${name}, you are ${age} years old! and you come from ${location}`);
+}
+
+Hello('John', 25, 'New York');
+
+let bag = function(){
+    console.log("Louis Vuitton");
+}
+bag();
+let brand = function(example){
+    console.log(`Hello ${example} brand?`);
+}
+
+brand("Louis Vuitton");
+
+// Arrow functions
+
+let car = (brand) => {
+    console.log(`Hello ${brand} car!`);
+}
+car("Cadillac");
+
+function evenOdd(evenOdd) {
+    if(evenOdd % 2 == 0){
+        console.log("Even");
+    }else{
+        console.log("Odd");
+    }
+}
+
+evenOdd(9);
+
+let digits = [1, 2, 3, 4];
+let last =0;
+digits.forEach(digit => {
+    last += digit;
+});
+console.log(last);
+
+// factorial
+let fact = 1;
+function factorial(factor) {
+    for(let i = 1; i<= factor; i++){
+        fact *= i;
+    }
+    console.log(fact);
+}
+factorial(5);
+
+function temperature(celsius) {
+    let fahrenheit = (((9/5)*celsius)+32);
+    console.log(fahrenheit);
+}
+temperature(32);
+
+// palindrome
+function palindrome(value) {
+    if(value === value.split('').reverse().join('')) {
+        console.log("Palindrome");
+    }else{
+        console.log("Not palindrome");
+    }
+}
+palindrome("omo");
+
+
+console.log("lorem".length);
